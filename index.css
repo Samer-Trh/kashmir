@@ -1,0 +1,473 @@
+header {
+    background-color: white;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+header nav {
+    padding: 20px 50px;
+    display: flex;
+}
+
+header nav .logo {
+    width: 20%;
+}
+
+header nav .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    margin: auto;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li #active {
+    font-weight: 600;
+    color: black;
+    cursor: default;
+    border: none;
+}
+
+nav ul li a {
+    color: #585858;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    padding-bottom: 3px;
+}
+
+nav ul li a:hover {
+    /* text-decoration: underline black; */
+    border-bottom: 1px solid black;
+}
+
+nav .icons {
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    /* color: #585858; */
+    color: black;
+    font-size: 20px;
+    padding-bottom: 3px;
+
+}
+
+nav .icons a:hover {
+    /* color: black; */
+    border-bottom: 1px solid #585858;
+}
+
+.header-resp {
+    display: none;
+}
+
+.image-1-in-between {
+    margin: 50px 0;
+    text-align: center;
+
+
+    animation-name: image-1_animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.image-1-in-between img {
+    width: 100%;
+}
+
+@keyframes image-1_animation {
+    from   {opacity: 0;}
+    to  {opacity: 1;}
+}
+
+.image-2-in-between {
+    width: 100%;
+    height: 70vh;
+    margin: 50px 0;
+    text-align: center;
+    background-image: url(pictures/kashmir-image_of_store.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cats {
+    width: 70%;
+    margin: 0 auto;
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.cats a {
+    text-decoration: none;
+    color: black;
+}
+
+.cat {
+    width: 100%;
+}
+
+.cat .image {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.cat .image:hover {
+    transform: scale(0.97);
+    transition-duration: 0.7s;
+    overflow: auto;
+    filter: brightness(1);
+}
+
+.cat .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.cat p {
+    padding: 10px 0;
+}
+
+.cats-row-3 {
+    column-count: 2;
+}
+
+footer {
+    background-color: black;
+    margin-top: 30px;
+}
+
+footer .logo {
+    width: 20%;
+    margin: 0 auto;
+}
+
+footer .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .location {
+    width: 40%;
+    margin: 30px auto;
+}
+
+footer .location img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .footer-social-media {
+    width: fit-content;
+    margin: 50px auto;
+    display: flex;
+}
+
+footer .footer-social-media a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+}
+
+footer .footer-social-media a:hover {
+    border-bottom: 1px solid #585858;
+}
+
+footer .copyright {
+    width: 100%;
+    border-top: 1px solid #818181;
+    padding: 10px 0;
+}
+
+footer .copyright p {
+    text-align: center;
+    color: #585858;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 414px) {
+    header {
+        display: none;
+    }
+    .header-resp {
+        display: flex;
+    }
+    .header-resp span {
+        padding: 10px 20px;
+    }
+    .header-resp .logo {
+        width: 50%;
+        margin: auto;
+    }
+    .header-resp .logo img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cats {
+        width: 90%;
+        column-count: 1;
+        column-gap: 0;
+    }
+
+    footer .logo {
+        width: 50%;
+    }
+    footer .location {
+        width: 70%;
+        margin: 30px auto;
+    }
+}
+
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.social-media {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    left: 20px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+  
+/* Caption text */
+.slideshow-container p {
+    color: white;
+    font-size: 15px;
+    padding: 8px 0;
+    margin: 15px 0 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    display: none;
+}
+
+@keyframes fade {
+    from{background-color: #00000080;}
+    to{background-color: black;}
+}
+
+
+
+
+
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slideshow__slide {
+    display: none;
+    position: relative;
+}
+
+.slideshow__slide.active {
+    display: block;
+}
+
+.slideshow__slide img {
+    width: 100%;
+}
+
+.slideshow__text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.button {
+    background-color: #00000080;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.slideshow__prev, .slideshow__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00000080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.slideshow__prev:hover, .slideshow__next:hover {
+    background-color: black;
+}
+
+.slideshow__prev {
+    left: 10px;
+}
+
+.slideshow__next {
+    right: 10px;
+}
+
+
+
+
+
+
+
+.slideshow2 {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slideshow2__slide {
+    display: none;
+    position: relative;
+}
+
+.slideshow2__slide.active {
+    display: block;
+}
+
+.slideshow2__slide img {
+    width: 100%;
+}
+
+.slideshow2__text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.slideshow2__prev, .slideshow2__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00000080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.slideshow2__prev:hover, .slideshow2__next:hover {
+    background-color: black;
+}
+
+.slideshow2__prev {
+    left: 10px;
+}
+
+.slideshow2__next {
+    right: 10px;
+}
+
+
+
+
+
+/* Slideshow container */
+.slideshow3-container {
+    position: relative;
+    margin: auto;
+}
+  
+/* Caption text */
+.slideshow3-container p {
+    color: white;
+    font-size: 15px;
+    padding: 8px 0;
+    margin: 50px 0 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    animation-name: fade3;
+    animation-duration: 5s;
+}
+  
+/* The dots/bullets/indicators */
+.dot3 {
+    display: none;
+}
+
+@keyframes fade3 {
+    from{background-color: #00000080;}
+    to{background-color: black;}
+}

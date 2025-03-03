@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories ~ Suits | Kashmir Clothing Store</title>
+    <link rel="stylesheet" href="suits.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/">
+</head>
+<body>
+    <div class="back">
+        <a href="index.html"><button><i class="fa fa-angle-left" aria-hidden="true"></i> Back</button></a>
+    </div>
+    <header>
+        <h1>Suits</h1>
+        <p>Kashmir, Introducing our meticulously crafted suit, a timeless ensemble designed to elevate your style with sophistication and refinement. Tailored to perfection, this suit embodies the essence of sartorial elegance, offering a sleek silhouette and impeccable fit. Crafted from premium quality fabric, it ensures both comfort and durability, making it a versatile choice for any occasion. Whether you're attending a formal event or a business meeting, our suit exudes confidence and sophistication, allowing you to make a lasting impression wherever you go. Elevate your wardrobe with this distinguished ensemble, a true testament to classic style and impeccable craftsmanship. </p>
+    </header>
+
+    <section>
+        <div class="sort-options">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+                <option value="default">Select an option</option>
+                <option value="name-asc">Alphabetically, A-Z</option>
+                <option value="name-desc">Alphabetically, Z-A</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+            </select>
+        </div>
+
+        <div class="price-filter">
+            <label for="min-price">Min Price:</label>
+            <input type="number" id="min-price" placeholder="125"><br>
+            <label for="max-price">Max Price:</label>
+            <input type="number" id="max-price" placeholder="260"><br>
+            <button id="filter-button">Filter</button>
+            <button id="reset-button">Reset</button>
+        </div>
+
+        <div class="cats">
+            <div class="cat" data-price="260">
+                <div class="image">
+                    <img src="pictures/kashmir-suit_1.png">
+                </div>
+                <p>Double Breasted Suit - Grey</p>
+                <h3>$ 260.00 USD</h3>
+            </div>
+    
+            <div class="cat" data-price="160">
+                <div class="image">
+                    <img src="pictures/kashmir-suit_2.png">
+                </div>
+                <p>Comfy Travel Suit - Navy</p>
+                <h3>$ 160.00 USD</h3>
+            </div>
+    
+            <div class="cat" data-price="145">
+                <div class="image">
+                    <img src="pictures/kashmir-suit_3.png">
+                </div>
+                <p>Comfy Travel Suit - White</p>
+                <h3>$ 145.00 USD</h3>
+            </div>
+    
+            <div class="cat" data-price="125">
+                <div class="image">
+                    <img src="pictures/kashmir-suit_4.png">
+                </div>
+                <p>Comfy Travel Suit - Beige</p>
+                <h3>$ 125.00 USD</h3>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="cats">
+            <div class="cat" data-price="150">
+                <div class="image">
+                    <img src="pictures/kashmir-suit_5.png">
+                </div>
+                <p>Comfy Travel Suit - Grey</p>
+                <h3>$ 150.00 USD</h3>
+            </div>
+    
+            <div class="cat" data-price="150">
+                <div class="image">
+                    <img src="pictures/kashmir-suit_6.png">
+                </div>
+                <p>Comfy Travel Suit - Olive</p>
+                <h3>$ 150.00 USD</h3>
+            </div>
+    
+            <div class="cat" data-price="200">
+                <div class="image">
+                    <img src="pictures/kashmir-suit_7.png">
+                </div>
+                <p>Comfy Travel Suit - Black</p>
+                <h3>$ 200.00 USD</h3>
+            </div>
+    
+            <div class="cat" data-price="220">
+                <div class="image">
+                    <img src="pictures/kashmir-suit_8.png">
+                </div>
+                <p>Double Breasted Suit - Mint</p>
+                <h3>$ 220.00 USD</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="pictures/kashmir-logo.png">
+        <p>Designed & Developed By "Samer Trh" <br><i class="fa fa-copyright" aria-hidden="true"></i> 2025 | All Rights Reserved</p>
+    </footer>
+
+
+
+    <script>
+
+        /* js filter price */
+
+        document.getElementById('filter-button').addEventListener('click', function() {
+            const minPrice = parseFloat(document.getElementById('min-price').value) || 0;
+            const maxPrice = parseFloat(document.getElementById('max-price').value) || Infinity;
+            
+            const cats = document.querySelectorAll('.cat');
+            cats.forEach(cat => {
+                const price = parseFloat(cat.getAttribute('data-price'));
+                if (price >= minPrice && price <= maxPrice) {
+                    cat.style.display = 'block'; // Show the suit
+                } else {
+                    cat.style.display = 'none'; // Hide the suit
+                }
+            });
+        });
+
+        /* js reset */
+
+        document.getElementById('reset-button').addEventListener('click', function() {
+            // Clear the input fields
+            document.getElementById('min-price').value = '';
+            document.getElementById('max-price').value = '';
+
+            // Show all suits
+            const cats = document.querySelectorAll('.cat');
+            cats.forEach(cat => {
+                cat.style.display = 'block'; // Show all suits
+            });
+        });
+
+        /* js sort by */
+
+        document.getElementById('sort-select').addEventListener('change', function() {
+            const sortValue = this.value;
+            const cats = Array.from(document.querySelectorAll('.cat'));
+
+            if (sortValue === 'name-asc') {
+                cats.sort((a, b) => a.querySelector('p').innerText.localeCompare(b.querySelector('p').innerText));
+            } else if (sortValue === 'name-desc') {
+                cats.sort((a, b) => b.querySelector('p').innerText.localeCompare(a.querySelector('p').innerText));
+            } else if (sortValue === 'price-asc') {
+                cats.sort((a, b) => parseFloat(a.getAttribute('data-price')) - parseFloat(b.getAttribute('data-price')));
+            } else if (sortValue === 'price-desc') {
+                cats.sort((a, b) => parseFloat(b.getAttribute('data-price')) - parseFloat(a.getAttribute('data-price')));
+            }
+
+            // Append sorted cats back to the container
+            const catsContainer = document.querySelector('.cats');
+            catsContainer.innerHTML = ''; // Clear existing suits
+            cats.forEach(cat => catsContainer.appendChild(cat)); // Append sorted suits
+        });
+    </script>
+</body>
+</html>

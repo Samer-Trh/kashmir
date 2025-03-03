@@ -1,0 +1,190 @@
+.back {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.back a {
+    text-decoration: none;
+    color: black;
+}
+
+.back a button {
+    padding: 8px 20px;
+    cursor: pointer;
+    border: 1px solid #585858;
+    border-radius: 0;
+    background-color: #efefef;
+}
+
+.back a button:hover {
+    background-color: #d8d8d8;
+}
+
+.back a .fa {
+    padding-right: 5px;
+}
+
+header {
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 100px;
+}
+
+header h1 {
+    color: black;
+    border-left: 3px solid #909090;
+    padding-left: 10px;
+    margin: 50px 0;
+}
+
+header p {
+    line-height: 30px;
+    font-size: 18px;
+    /* color: #00000083; */
+    color: #909090;
+}
+
+header p:first-letter { 
+    font-size: 100px; 
+    display: block; 
+    float: left; 
+    line-height: 0.5; 
+    margin: 15px 15px 10px 0;
+    color: #585858;
+} 
+
+section .price-filter, section .sort-options {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+section .price-filter label, section .sort-options label {
+    color: #585858;
+}
+
+section .price-filter button, section .sort-options select {
+    cursor: pointer;
+}
+
+section .price-filter button {
+    padding: 5px 10px;
+    border: 1px solid #585858;
+    border-radius: 0;
+    background-color: #efefef;
+}
+
+section .price-filter button:hover {
+    background-color: #d8d8d8;
+}
+
+section .sort-options select {
+    padding: 5px;
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+section .sort-options select:focus {
+    outline-color: #585858;
+}
+
+section .price-filter input {
+    border-radius: 0;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+section .price-filter input:focus {
+    outline-color: #585858;
+}
+
+section .price-filter br {
+    display: none;
+}
+
+section .cats {
+    width: 80%;
+    margin: 30px auto;
+    column-count: 4;
+    display: flex;
+    column-gap: 10px;
+}
+
+section .cat {
+    width: 100%;
+}
+
+.cat .image {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.cat .image:hover {
+    transform: scale(0.97);
+    transition-duration: 0.7s;
+    overflow: auto;
+    filter: brightness(1);
+}
+
+.cat .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.cat p {
+    font-size: 14px;
+    color: #585858;
+}
+
+.cat h3 {
+    color: black;
+}
+
+footer {
+    background-color: black;
+}
+
+footer img {
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+}
+
+footer p {
+    padding: 30px 0;
+    text-align: center;
+    color: #585858;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 414px) {
+    header {
+        margin-bottom: 50px;
+    }
+    header p {
+        height: 150px;
+        overflow: auto;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    section .cats {
+        column-count: 1;
+        display: block;
+        column-gap: 0;
+    }
+    section .price-filter br {
+        display: block;
+    }
+    section .price-filter .label, section .price-filter input {
+        margin: 10px 0;
+    }
+    section .price-filter button {
+        margin: 10px;
+    }
+
+    footer img {
+        width: 50%;
+    }
+}

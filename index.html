@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Kashmir Clothing Store</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="pictures/kashmir-logo.png">
+            </div>
+            <ul>
+                <li><a id="active" href="index.html">Home</a></li>
+                <!-- <li><a href="suits.html">Suits</a></li>
+                <li><a href="suits.html">Shirts</a></li>
+                <li><a href="suits.html">Polos</a></li>
+                <li><a href="suits.html">Jeans</a></li>
+                <li><a href="suits.html">Pants</a></li> -->
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="map.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a id="active" href="index.html">Home</a>
+            <!-- <a href="suits.html">Suits</a>
+            <a href="suits.html">Shirts</a>
+            <a href="suits.html">Polos</a>
+            <a href="suits.html">Jeans</a>
+            <a href="suits.html">Pants</a> -->
+            <a href="#categories">Categories</a>
+            <a href="map.html">Location</a>
+            <a href="contact.html">Contact</a>
+            <div class="social-media">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+      </div>
+
+    <header class="header-resp">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="logo">
+            <img src="pictures/kashmir-logo.png">
+        </div>
+    </header>
+
+
+
+    <!-- html horizontal ad -->
+
+    <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <p>10% off all orders applied automatically at checkout.</p>
+        </div>
+
+        <div class="mySlides fade">
+            <p>Call / WhatsApp: (+961) 70 031 495</p>
+        </div>
+        
+    </div>
+        
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+
+
+    <!-- html slide-show 1 -->
+
+    <div class="slideshow">
+        <div class="slideshow__slide active">
+            <img src="pictures/kashmir-new_collection.png" alt="Slide 1">
+            <div class="slideshow__text">
+                <a href="#categories" class="button">VIEW COLLECTIONS</a>
+            </div>
+        </div>
+        <div class="slideshow__slide">
+            <img src="pictures/kashmir-jeans_collection.png" alt="Slide 2">
+            <div class="slideshow__text">
+                <a href="suits.html" class="button">EXPLORE JEANS</a>
+            </div>
+        </div>
+        <!-- Add more slides as needed -->
+        <button class="slideshow__prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="slideshow__next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+    <div class="image-1-in-between">
+        <img src="pictures/kashmir-facebook_wallpaper.jpeg">
+    </div>
+
+
+    <!-- html horizontal ad 2 -->
+
+    <div class="slideshow3-container">
+
+        <div class="mySlides3 fade">
+            <p>Delivery All Over Lebanon</p>
+        </div>
+        
+        <div class="mySlides3 fade">
+            <p>Exchanges Available</p>
+        </div>
+    
+        <div class="mySlides3 fade">
+            <p>Free Shipping on orders over $50!</p>
+        </div>
+        
+    </div>
+    
+    <div style="text-align:center">
+        <span class="dot3"></span> 
+        <span class="dot3"></span> 
+        <span class="dot3"></span> 
+        <span class="dot3"></span> 
+    </div>
+
+
+
+    <!-- html slide-show 2 -->
+
+    <div class="slideshow2">
+        <div class="slideshow2__slide active">
+            <img src="pictures/kashmir-modern_suit_collection.png" alt="Slide 1">
+            <div class="slideshow2__text">
+                <a href="suits.html" class="button">DISCOVER SUITS</a>
+            </div>
+        </div>
+        <div class="slideshow2__slide">
+            <img src="pictures/kashmir-discover-double-breasted_suits.png" alt="Slide 2">
+            <div class="slideshow2__text">
+                <a href="suits.html" class="button">SHOP NOW</a>
+            </div>
+        </div>
+        <div class="slideshow2__slide">
+            <img src="pictures/kashmir-ceremony_collection.png" alt="Slide 3">
+            <div class="slideshow2__text">
+                <a href="#categories" class="button">BROWSE COLLECTION</a>
+            </div>
+        </div>
+        <!-- Add more slides as needed -->
+        <button class="slideshow2__prev" onclick="changeSlide2(-1)">&#10094;</button>
+        <button class="slideshow2__next" onclick="changeSlide2(1)">&#10095;</button>
+    </div>
+
+    <div class="image-2-in-between"></div>
+
+    <!-- row 1 -->
+    <div class="cats" id="categories">
+        <a href="suits.html"><div class="cat">
+            <div class="image">
+                <img src="pictures/kashmir-casual_shirts.png">
+            </div>
+            <p>Casual Shirts</p>
+        </div></a>
+
+        <a href="suits.html"><div class="cat">
+            <div class="image">
+                <img src="pictures/kashmir-polo_shirts.png">
+            </div>
+            <p>Polo Shirts</p>
+        </div></a>
+
+        <a href="suits.html"><div class="cat">
+            <div class="image">
+                <img src="pictures/kashmir-chino_pants.png">
+            </div>
+            <p>Chino Pants</p>
+        </div></a>
+    </div>
+
+    <!-- row 2 -->
+    <div class="cats">
+        <a href="suits.html"><div class="cat">
+            <div class="image">
+                <img src="pictures/kashmir-casual_shoes.png">
+            </div>
+            <p>Casual Shoes</p>
+        </div></a>
+
+        <a href="suits.html"><div class="cat">
+            <div class="image">
+                <img src="pictures/kashmir-loafers.png">
+            </div>
+            <p>Loafers</p>
+        </div></a>
+
+        <a href="suits.html"><div class="cat">
+            <div class="image">
+                <img src="pictures/kashmir-suits.png">
+            </div>
+            <p>Suits</p>
+        </div></a>
+    </div>
+
+    <!-- row 3 -->
+    <div class="cats cats-row-3">
+        <a href="suits.html"><div class="cat">
+            <div class="image">
+                <img src="pictures/kashmir-jeans.png">
+            </div>
+            <p>Jeans</p>
+        </div></a>
+
+        <a href="suits.html"><div class="cat">
+            <div class="image">
+                <img src="pictures/kashmir-shorts.png">
+            </div>
+            <p>Shorts</p>
+        </div></a>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="pictures/kashmir-logo.png">
+        </div>
+        <div class="location"><a href="map.html">
+            <img src="pictures/kashmir-footer_contact.png">
+        </a></div>
+        <div class="footer-social-media">
+            <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="copyright">
+            <p>Designed & Developed By "Samer Trh" <br><i class="fa fa-copyright" aria-hidden="true"></i> 2025 | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+        
+
+
+    <!-- js resp nav -->
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "70%";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <!-- js horizontal ad -->
+    <script>
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }    
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";  
+            dots[slideIndex - 1].className += " active";
+        }
+
+        function startSlideshow() {
+            showSlides();
+            setInterval(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        startSlideshow(); // Start the slideshow
+    </script>
+
+    <!-- js slide-show 1 -->
+    <script>
+        let currentSlide = 0;
+
+        function showSlides() {
+            const slides = document.querySelectorAll('.slideshow__slide');
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === currentSlide) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function changeSlide(n) {
+            const slides = document.querySelectorAll('.slideshow__slide');
+            currentSlide = (currentSlide + n + slides.length) % slides.length;
+            showSlides();
+        }
+
+        // Initialize the slideshow
+        showSlides();
+        setInterval(() => changeSlide(1), 5000); // Change slide every 5 seconds
+    </script>
+
+    <!-- js slide-show 2 -->
+    <script>
+        let currentSlide2 = 0;
+
+        function showSlides2() {
+            const slides = document.querySelectorAll('.slideshow2__slide');
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === currentSlide2) {
+                    slide.classList.add('active');
+                }
+            });
+        }
+
+        function changeSlide2(n) {
+            const slides = document.querySelectorAll('.slideshow2__slide');
+            currentSlide2 = (currentSlide2 + n + slides.length) % slides.length;
+            showSlides2();
+        }
+
+        // Initialize the second slideshow
+        showSlides2();
+        setInterval(() => changeSlide2(1), 5000); // Change slide every 5 seconds
+    </script>
+
+
+
+    <!-- js horizontal ad 2 -->
+
+    <script>
+        let slideIndex3 = 0;
+        const slides3 = document.getElementsByClassName("mySlides3");
+        const dots3 = document.getElementsByClassName("dot3");
+    
+        function showSlides3() {
+            for (let i = 0; i < slides3.length; i++) {
+                slides3[i].style.display = "none";  
+            }
+            slideIndex3++;
+            if (slideIndex3 > slides3.length) { slideIndex3 = 1; }    
+            for (let i = 0; i < dots3.length; i++) {
+                dots3[i].className = dots3[i].className.replace(" active", "");
+            }
+            slides3[slideIndex3 - 1].style.display = "block";  
+            dots3[slideIndex3 - 1].className += " active";
+        }
+    
+        function startSlideshow3() {
+            showSlides3();
+            setInterval(showSlides3, 2000); // Change slide every 2 seconds
+        }
+    
+        startSlideshow3(); // Start the third slideshow
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+.back {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.back a {
+    text-decoration: none;
+    color: black;
+}
+
+.back a button {
+    padding: 8px 20px;
+    cursor: pointer;
+    border: 1px solid #585858;
+    border-radius: 0;
+    background-color: #efefef;
+}
+
+.back a button:hover {
+    background-color: #d8d8d8;
+}
+
+.back a .fa {
+    padding-right: 5px;
+}
+
+header {
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 100px;
+}
+
+header h1 {
+    color: black;
+    border-left: 3px solid #909090;
+    padding-left: 10px;
+    margin: 50px 0;
+}
+
+header p {
+    line-height: 30px;
+    font-size: 18px;
+    color: #909090;
+}
+
+header p a {
+    color: #585858;
+}
+
+header p a:hover {
+    color: black;
+}
+
+header p .fa {
+    padding-left: 5px;
+    color: #585858;
+}
+
+header hr {
+    margin: 30px 0;
+    width: 10%;
+
+    border: none;
+    height: 2px;
+    background-color: #585858;
+}
+
+hr {
+    width: 60%;
+    margin: 100px auto;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form h3 {
+    color: black;
+    border-left: 3px solid #909090;
+    padding-left: 10px;
+}
+
+form .rows {
+    margin: 30px 0;
+    display: flex;
+}
+
+form .row_1 {
+    column-count: 2;
+    column-gap: 10px;
+}
+
+form .row_1 input {
+    width: 100%;
+}
+
+form .row_2 input {
+    width: 100%;
+}
+
+form .row_3 textarea {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form .row_3 textarea:focus {
+    outline-color: #585858;
+}
+
+form .row_3 input {
+    width: 100%;
+}
+
+form .row_4 {
+    column-count: 2;
+    column-gap: 10px;
+}
+
+form .row_4 input {
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #585858;
+    border-radius: 0;
+    background-color: #efefef;
+}
+
+form .row_4 input:hover {
+    background-color: #d8d8d8;
+}
+
+form input {
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 1px solid black;
+    font-size: 18px;
+    /* width: 100%; */
+}
+
+form input:focus {
+    outline-color: #585858;
+}
+
+footer {
+    background-color: black;
+    margin-top: 100px;
+}
+
+footer img {
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+}
+
+footer p {
+    padding: 30px 0;
+    text-align: center;
+    color: #585858;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 414px) {
+    header hr {
+        width: 30%;
+    }
+
+    footer img {
+        width: 50%;
+    }
+}
