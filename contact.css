@@ -14,6 +14,7 @@
     border: 1px solid #585858;
     border-radius: 0;
     background-color: #efefef;
+    color: black;
 }
 
 .back a button:hover {
@@ -127,6 +128,7 @@ form .row_4 input {
     border: 1px solid #585858;
     border-radius: 0;
     background-color: #efefef;
+    color: black;
 }
 
 form .row_4 input:hover {
