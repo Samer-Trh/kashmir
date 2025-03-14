@@ -309,6 +309,7 @@ footer .copyright p {
 
 .mySlides p a {
     color: white;
+    text-decoration: underline;
 }
   
 /* The dots/bullets/indicators */
