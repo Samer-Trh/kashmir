@@ -14,6 +14,7 @@
     border: 1px solid #585858;
     border-radius: 0;
     background-color: #efefef;
+    color: black;
 }
 
 .back a button:hover {
@@ -72,6 +73,7 @@ section .price-filter button {
     border: 1px solid #585858;
     border-radius: 0;
     background-color: #efefef;
+    color: black;
 }
 
 section .price-filter button:hover {
@@ -82,6 +84,7 @@ section .sort-options select {
     padding: 5px;
     border-radius: 0;
     border: 1px solid black;
+    color: black;
 }
 
 section .sort-options select:focus {
