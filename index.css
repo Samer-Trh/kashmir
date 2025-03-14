@@ -306,6 +306,10 @@ footer .copyright p {
     animation-name: fade;
     animation-duration: 5s;
 }
+
+.mySlides p {
+    color: white;
+}
   
 /* The dots/bullets/indicators */
 .dot {
